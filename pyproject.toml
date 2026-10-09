@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantdairy"
+version = "0.0.1"
+description = "quantdairy"
+authors = [
+  { name = "quantdairy", email = "21pradipjadhav@gmail.com" }
+]
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["quantdairy*"]
+
+[tool.frappe]
+app_name = "quantdairy"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0,<16.0.0"
