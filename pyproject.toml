@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "quantdairy"
 version = "0.0.1"
@@ -8,6 +12,9 @@ authors = [
 requires-python = ">=3.10"
 readme = "README.md"
 dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["quantdairy*"]
 
 [tool.frappe]
 app_name = "quantdairy"
